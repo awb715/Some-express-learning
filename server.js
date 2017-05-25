@@ -67,6 +67,16 @@ app.get('/bad',(req,res)=>{
     });
 });
 
+app.get('/projects',(req,res)=>{
+    res.render('projects.hbs',{
+        
+        pageTitle:'Projects Page',
+        message:'Check out my projects'
+
+    });//renders template
+});
+
+
 app.listen(port, () =>{
     console.log(`Server.js is now up on ${port}`)
 });
